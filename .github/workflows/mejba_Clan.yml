@@ -81,5 +81,3 @@ jobs:
         with:
           name: mejba-clan-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
-
-K
