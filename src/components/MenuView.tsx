@@ -9,10 +9,7 @@ import {
   Settings as SettingsIcon,
   Crown,
   Star,
-  Sparkles,
-  Download,
 } from 'lucide-react';
-import { GithubIcon } from './GithubIcon';
 import { PlayerProfile } from '../types';
 import { sound } from '../game/sound';
 
@@ -38,8 +35,6 @@ export const MenuView: React.FC<MenuViewProps> = ({
   onOpenPromo,
   onOpenLeaderboard,
   onOpenSettings,
-  onOpenOpenSource,
-  onOpenDownload,
 }) => {
   const todayStr = new Date().toISOString().split('T')[0];
   const isDailyRewardReady = profile.dailyReward.lastClaimDate !== todayStr;
@@ -201,64 +196,6 @@ export const MenuView: React.FC<MenuViewProps> = ({
           </div>
         </button>
       </div>
-
-      {/* Open Source on GitHub Banner */}
-      <button
-        onClick={() => {
-          sound.playClick();
-          onOpenOpenSource();
-        }}
-        className="w-full bg-gradient-to-r from-purple-900/70 via-indigo-950/80 to-purple-900/70 hover:from-purple-800/80 hover:to-indigo-900/80 border border-amber-400/40 rounded-2xl p-2.5 flex items-center justify-between text-left transition-all active:scale-95 shadow-md group"
-      >
-        <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-xl bg-purple-900/80 border border-amber-400/50 flex items-center justify-center text-amber-300 group-hover:scale-110 transition-transform">
-            <GithubIcon className="w-4 h-4" />
-          </div>
-          <div>
-            <div className="text-xs font-black text-amber-300 flex items-center gap-1.5">
-              <span>Open Source on GitHub</span>
-              <span className="text-[9px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.2 rounded font-mono">
-                MIT
-              </span>
-            </div>
-            <div className="text-[10px] text-purple-200">
-              Free to inspect, fork, & contribute code
-            </div>
-          </div>
-        </div>
-        <span className="text-[11px] font-bold text-amber-300/90 group-hover:translate-x-0.5 transition-transform">
-          View →
-        </span>
-      </button>
-
-      {/* Bottom Download & Install APK / PWA Banner */}
-      <button
-        onClick={() => {
-          sound.playClick();
-          onOpenDownload();
-        }}
-        className="w-full bg-gradient-to-r from-emerald-950/80 via-teal-950/80 to-purple-950/80 hover:from-emerald-900/90 hover:to-teal-900/90 border border-emerald-500/40 rounded-2xl p-2.5 flex items-center justify-between text-left transition-all active:scale-95 shadow-md group"
-      >
-        <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-xl bg-emerald-900/80 border border-emerald-400/50 flex items-center justify-center text-emerald-300 group-hover:scale-110 transition-transform">
-            <Download className="w-4 h-4" />
-          </div>
-          <div>
-            <div className="text-xs font-black text-emerald-300 flex items-center gap-1.5">
-              <span>Download & Install Game</span>
-              <span className="text-[9px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.2 rounded font-mono">
-                v1.5.2.2
-              </span>
-            </div>
-            <div className="text-[10px] text-purple-200">
-              Direct mobile install & Android APK build guide
-            </div>
-          </div>
-        </div>
-        <span className="text-[11px] font-bold text-emerald-300 group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
-          Install ↓
-        </span>
-      </button>
     </div>
   );
 };
