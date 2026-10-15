@@ -1,0 +1,6 @@
+{
+  "name": "Mejba",
+  "description": "A dazzling match-3 fantasy jewel puzzle game with challenging levels, magical boosters, and cascading combos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

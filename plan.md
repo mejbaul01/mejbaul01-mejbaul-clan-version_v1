@@ -1,0 +1,6 @@
+## Mejba Mobile Web Game Plan
+- [x] Create the mobile-first Mejba identity and navigation: use the uploaded logo, jewel-toned coral, amethyst and plum palette, rounded readable typography, portrait-first layout, splash, main menu, and a level-selection map that clearly shows locked levels and ratings.
+- [x] Build the playable match-3 game screen with an 8×8 board, six distinct gems, touch and mouse swapping, valid-match detection, invalid-swap reversal, gravity, refills, cascades, no-initial-match generation, no-move shuffle, input locking during resolution, scoring, move limits, and 20 distinct level configurations.
+- [x] Complete the player experience with level goals and difficulty, stars, coins, high scores, balanced boosters, pause/restart/home, victory, reward and loss screens, settings and about/privacy information, and resilient local browser saving with reset confirmation and sound controls.
+- [x] Test the web game and provide beginner-friendly setup instructions, an honest test report, and draft store-listing/privacy materials; clearly document that a Godot project, Android APK, signed AAB, and Play submission cannot be produced from this Reflex-only workspace.
+- [ ] apk name is Rest of Clans

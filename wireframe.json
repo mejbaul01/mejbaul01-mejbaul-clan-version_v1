@@ -1,0 +1,254 @@
+{
+  "version": 4,
+  "app_title": "Mejba Mobile Web Game Plan",
+  "nav": {
+    "placement": "none",
+    "items": []
+  },
+  "pages": [
+    {
+      "id": "page-be6b21ec",
+      "name": "Splash, menu and level map",
+      "route": "/",
+      "item_ref": {
+        "index": 0,
+        "text": "Create the mobile-first Mejba identity and navigation: use the uploaded logo, jewel-toned coral, amethyst and plum palette, rounded readable typography, portrait-first layout, splash, main menu, and a level-selection map that clearly shows locked levels and ratings."
+      },
+      "blocks": [
+        {
+          "id": "splash-logo",
+          "type": "image",
+          "label": "Mejba logo splash",
+          "hint": "Uploaded logo centered over a jewel-toned background, then enters the menu",
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 3,
+          "item_ref": {
+            "index": 0,
+            "text": "Create the mobile-first Mejba identity and navigation: use the uploaded logo, jewel-toned coral, amethyst and plum palette, rounded readable typography, portrait-first layout, splash, main menu, and a level-selection map that clearly shows locked levels and ratings."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "menu-actions",
+          "type": "nav",
+          "label": "Main menu actions",
+          "hint": "Play, settings and about controls in a portrait-friendly stack",
+          "x": 0,
+          "y": 3,
+          "w": 12,
+          "h": 3,
+          "item_ref": {
+            "index": 0,
+            "text": "Create the mobile-first Mejba identity and navigation: use the uploaded logo, jewel-toned coral, amethyst and plum palette, rounded readable typography, portrait-first layout, splash, main menu, and a level-selection map that clearly shows locked levels and ratings."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "level-map",
+          "type": "map",
+          "label": "Level selection map",
+          "hint": "Scrollable stage tiles with locks, stars and current level",
+          "x": 0,
+          "y": 6,
+          "w": 12,
+          "h": 5,
+          "item_ref": {
+            "index": 0,
+            "text": "Create the mobile-first Mejba identity and navigation: use the uploaded logo, jewel-toned coral, amethyst and plum palette, rounded readable typography, portrait-first layout, splash, main menu, and a level-selection map that clearly shows locked levels and ratings."
+          },
+          "type_source": "palette"
+        }
+      ],
+      "deleted_ids": []
+    },
+    {
+      "id": "page-41a8794e",
+      "name": "Gameplay",
+      "route": "/game",
+      "item_ref": {
+        "index": 1,
+        "text": "Build the playable match-3 game screen with an 8×8 board, six distinct gems, touch and mouse swapping, valid-match detection, invalid-swap reversal, gravity, refills, cascades, no-initial-match generation, no-move shuffle, input locking during resolution, scoring, move limits, and 20 distinct level configurations."
+      },
+      "blocks": [
+        {
+          "id": "game-top",
+          "type": "nav",
+          "label": "Game top controls",
+          "hint": "Back and pause actions with current level",
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 1,
+          "item_ref": {
+            "index": 1,
+            "text": "Build the playable match-3 game screen with an 8×8 board, six distinct gems, touch and mouse swapping, valid-match detection, invalid-swap reversal, gravity, refills, cascades, no-initial-match generation, no-move shuffle, input locking during resolution, scoring, move limits, and 20 distinct level configurations."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "game-status",
+          "type": "card",
+          "label": "Level objective and counters",
+          "hint": "Score target, current score and remaining moves",
+          "x": 0,
+          "y": 1,
+          "w": 12,
+          "h": 2,
+          "item_ref": {
+            "index": 1,
+            "text": "Build the playable match-3 game screen with an 8×8 board, six distinct gems, touch and mouse swapping, valid-match detection, invalid-swap reversal, gravity, refills, cascades, no-initial-match generation, no-move shuffle, input locking during resolution, scoring, move limits, and 20 distinct level configurations."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "gem-board",
+          "type": "text",
+          "label": "8 by 8 gem board",
+          "hint": "Touchable gem cells with matching and cascade animations",
+          "x": 0,
+          "y": 3,
+          "w": 12,
+          "h": 7,
+          "item_ref": {
+            "index": 1,
+            "text": "Build the playable match-3 game screen with an 8×8 board, six distinct gems, touch and mouse swapping, valid-match detection, invalid-swap reversal, gravity, refills, cascades, no-initial-match generation, no-move shuffle, input locking during resolution, scoring, move limits, and 20 distinct level configurations."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "boosters",
+          "type": "card",
+          "label": "Boosters",
+          "hint": "Limited-use helpers and coin costs",
+          "x": 0,
+          "y": 10,
+          "w": 12,
+          "h": 2,
+          "item_ref": {
+            "index": 1,
+            "text": "Build the playable match-3 game screen with an 8×8 board, six distinct gems, touch and mouse swapping, valid-match detection, invalid-swap reversal, gravity, refills, cascades, no-initial-match generation, no-move shuffle, input locking during resolution, scoring, move limits, and 20 distinct level configurations."
+          },
+          "type_source": "palette"
+        }
+      ],
+      "deleted_ids": []
+    },
+    {
+      "id": "page-7b015839",
+      "name": "Progress and game overlays",
+      "route": "/settings",
+      "item_ref": {
+        "index": 2,
+        "text": "Complete the player experience with level goals and difficulty, stars, coins, high scores, balanced boosters, pause/restart/home, victory, reward and loss screens, settings and about/privacy information, and resilient local browser saving with reset confirmation and sound controls."
+      },
+      "blocks": [
+        {
+          "id": "settings-header",
+          "type": "nav",
+          "label": "Settings header",
+          "hint": "Return to menu",
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 1,
+          "item_ref": {
+            "index": 2,
+            "text": "Complete the player experience with level goals and difficulty, stars, coins, high scores, balanced boosters, pause/restart/home, victory, reward and loss screens, settings and about/privacy information, and resilient local browser saving with reset confirmation and sound controls."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "settings-controls",
+          "type": "form",
+          "label": "Audio and progress settings",
+          "hint": "Music and sound switches plus reset confirmation",
+          "x": 0,
+          "y": 1,
+          "w": 12,
+          "h": 4,
+          "item_ref": {
+            "index": 2,
+            "text": "Complete the player experience with level goals and difficulty, stars, coins, high scores, balanced boosters, pause/restart/home, victory, reward and loss screens, settings and about/privacy information, and resilient local browser saving with reset confirmation and sound controls."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "about-privacy",
+          "type": "card",
+          "label": "About and privacy",
+          "hint": "Offline play and local-save explanation",
+          "x": 0,
+          "y": 5,
+          "w": 12,
+          "h": 3,
+          "item_ref": {
+            "index": 2,
+            "text": "Complete the player experience with level goals and difficulty, stars, coins, high scores, balanced boosters, pause/restart/home, victory, reward and loss screens, settings and about/privacy information, and resilient local browser saving with reset confirmation and sound controls."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "game-overlays",
+          "type": "card",
+          "label": "Game result and pause overlays",
+          "hint": "Victory, reward, defeat and pause panels appear in the game flow",
+          "x": 0,
+          "y": 8,
+          "w": 12,
+          "h": 3,
+          "item_ref": {
+            "index": 2,
+            "text": "Complete the player experience with level goals and difficulty, stars, coins, high scores, balanced boosters, pause/restart/home, victory, reward and loss screens, settings and about/privacy information, and resilient local browser saving with reset confirmation and sound controls."
+          },
+          "type_source": "palette"
+        }
+      ],
+      "deleted_ids": []
+    },
+    {
+      "id": "page-d0d48a75",
+      "name": "Documentation and publication drafts",
+      "route": "/about",
+      "item_ref": {
+        "index": 3,
+        "text": "Test the web game and provide beginner-friendly setup instructions, an honest test report, and draft store-listing/privacy materials; clearly document that a Godot project, Android APK, signed AAB, and Play submission cannot be produced from this Reflex-only workspace."
+      },
+      "blocks": [
+        {
+          "id": "about-nav",
+          "type": "nav",
+          "label": "About navigation",
+          "hint": "Return to menu and settings",
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 1,
+          "item_ref": {
+            "index": 3,
+            "text": "Test the web game and provide beginner-friendly setup instructions, an honest test report, and draft store-listing/privacy materials; clearly document that a Godot project, Android APK, signed AAB, and Play submission cannot be produced from this Reflex-only workspace."
+          },
+          "type_source": "palette"
+        },
+        {
+          "id": "about-content",
+          "type": "card",
+          "label": "How to play and privacy",
+          "hint": "Beginner-friendly controls, offline storage and reset behavior",
+          "x": 0,
+          "y": 1,
+          "w": 12,
+          "h": 4,
+          "item_ref": {
+            "index": 3,
+            "text": "Test the web game and provide beginner-friendly setup instructions, an honest test report, and draft store-listing/privacy materials; clearly document that a Godot project, Android APK, signed AAB, and Play submission cannot be produced from this Reflex-only workspace."
+          },
+          "type_source": "palette"
+        }
+      ],
+      "deleted_ids": []
+    }
+  ],
+  "attached_to_plan": false
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "Mejba Clan",
+  "name": "Mejba Clan: Rest of Clans",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1a0f28",
+  "theme_color": "#1a0f28",
+  "display": "standalone"
+}

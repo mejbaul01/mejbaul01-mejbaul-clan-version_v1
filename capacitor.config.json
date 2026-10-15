@@ -1,0 +1,9 @@
+{
+  "appId": "com.mejbaclan.restofclans",
+  "appName": "Mejba Clan: Rest of Clans",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
