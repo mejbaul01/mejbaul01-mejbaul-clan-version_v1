@@ -1,0 +1,56 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code download
+        uses: actions/checkout@v4
+
+      - name: Node.js setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Java setup
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Dependencies install
+        run: npm install --legacy-peer-deps
+
+      - name: Capacitor packages install
+        run: |
+          npm install --legacy-peer-deps @capacitor/core @capacitor/android
+          npm install --legacy-peer-deps -D @capacitor/cli
+
+      - name: Web app build
+        run: npm run build
+
+      - name: Android project toiri (jodi na thake)
+        run: |
+          if [ ! -d android ]; then
+            npx cap add android
+          fi
+
+      - name: Web build Android-e sync
+        run: npx cap sync android
+
+      - name: Debug APK build
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+
+      - name: APK upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: mejba-clan-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
